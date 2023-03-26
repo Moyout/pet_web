@@ -1,0 +1,79 @@
+#login {
+    text-align: center;
+  }
+  .table {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box {
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    /* background-color: gray; */
+    display: inline-flex;
+    align-self: center;
+  }
+  .bgImg {
+    width: 400px;
+  }
+  .loginDiv {
+    width: 300px;
+    height: 350px;
+    align-self: center;
+    display: inline-block;
+    background-color: white;
+    padding: 20px 50px;
+    margin-left: 120px;
+    box-shadow: 2px 2px 30px gray;
+    border-radius: 10px;
+    position: relative;
+  }
+  .per-title {
+    margin-top: 20px;
+    font-size: 30px;
+    color: skyblue;
+  }
+  .inputUP {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    color: green;
+    letter-spacing: 2px;
+    /* background-color: gray; */
+    outline-color: green;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .inputDiv {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+  }
+  .confirm {
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: gray;
+    color: white;
+    margin: 20px 40px;
+  }
+  /* .confirm:hover {
+    background-color: skyblue;
+  } */
+  .correctInput {
+    background-color: skyblue;
+  }
+  .tips {
+    font-size: 12px;
+    color: gray;
+  }
+  .bottomDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

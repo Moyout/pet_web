@@ -1,0 +1,106 @@
+#Home {
+  /* padding-left: 5%; */
+  padding-top: 10px;
+}
+
+#carousel {
+  /* background-color: red; */
+  display: inline-block;
+  width: 40vw;
+  border-radius: 10px;
+  position: relative;
+  /* aspect-ratio: 4/3; */
+  max-height: 368px;
+  max-width: 491px;
+  /*  */
+  min-width: 400px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.indLi,
+.carLi {
+  list-style-type: none;
+}
+
+#carUl {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.carImg {
+  cursor: pointer;
+
+  width: 100%;
+  /* height: auto; */
+  /* max-height: 375px;
+  max-width: 450px;
+  min-width: 400px;
+  min-height: 300px; */
+  object-fit: cover;
+  border-radius: 10px;
+  aspect-ratio: 4/3;
+  transition: 0.5s;
+
+  /* position: absolute; */
+}
+
+.carImg:hover {
+  transform: scale(1.2);
+}
+
+.carImgHide {
+  display: none;
+}
+
+.indicator {
+  cursor: pointer;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  /* display: inline; */
+  float: left;
+}
+
+#indUl {
+  left: 40%;
+  bottom: 2%;
+  text-align: center;
+  /* top: 90%; */
+  background-color: transparent;
+  display: inline-flex;
+  position: absolute;
+}
+
+.activeInd {
+  cursor: pointer;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightblue;
+  /* display: inline; */
+  float: left;
+}
+
+.rightDiv {
+  /* top: 10px; */
+  width: 400px;
+  background-color: red;
+  /* left: 0; */
+  display: inline-block;
+  position: absolute;
+}
+
+
+#title {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #fff;
+  /* right: 0; */
+  text-align: center;
+  /* z-index: -1; */
+}

@@ -1,0 +1,65 @@
+#nav {
+  min-width: 1200px;
+  /* width: 100%; */
+}
+
+
+#logo {
+  float: left;
+  left: 10px;
+  position: absolute;
+}
+
+#nav>ul>li {
+  list-style-type: none;
+  display: inline-block;
+  width: 20%;
+  line-height: 80px;
+  height: 80px;
+  font-size: 22px;
+  text-align: center;
+  /* color: #000; */
+}
+
+
+@media (min-width:640px) {
+  #nav>ul>li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:960px) {
+  #nav>ul>li {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:1200px) {
+  #nav>ul>li {
+    font-size: 1.6rem;
+  }
+}
+
+
+ul {
+  background-color: grey;
+  text-align: center;
+
+}
+
+.routeLink {
+  color: white;
+  text-decoration: none;
+}
+
+.routeLink:hover {
+  color: skyblue;
+}
+
+/* .activedNav {
+  color: skyblue;
+} */
+
+#nav a.router-link-exact-active {
+  color: skyblue;
+}
