@@ -1,28 +1,53 @@
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-nav></v-nav>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import nav from "@/components/widgets/nav";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    "v-nav": nav
+    // HelloWorl
+  },
+  mounted() {
+    randomBgcolor();
+  },
+  data() {
+    return {
+      // isLogin: false,
+      // user: { username: "", password: "" }
+    };
+  },
+  methods: {
+    // setLogin2(msg) {
+    //   this.isLogin = !this.isLogin;
+    //   console.log("到App" + msg);
+    // }
   }
+};
+
+function randomBgcolor() {
+  var index = Math.round((Math.random() * 10) / 2);
+  var bgcolor = [
+    "bisque",
+    "skyblue",
+    "pink",
+    "paleturquoise",
+    "lightyellow",
+    "plum"
+  ];
+  var body = document.getElementsByTagName("body");
+  body[0].style.backgroundColor = bgcolor[index];
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
